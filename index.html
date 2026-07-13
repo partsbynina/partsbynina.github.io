@@ -4,75 +4,218 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PartsByNina</title>
+<title>PartsByNina | Luxury Hair Experience</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 
 body {
-    margin: 0;
-    background: white;
-    text-align: center;
+    margin:0;
+    background:#111;
+    color:white;
+    font-family:"Montserrat", sans-serif;
 }
 
-.hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
+
+.hero {
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.75)),
+    url('IMG_6956.jpeg') center/cover;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
 }
 
-.content {
-    padding: 40px 20px;
+
+.logo {
+    font-family:"Cormorant Garamond", serif;
+    font-size:70px;
+    letter-spacing:8px;
+    color:#d4af37;
 }
 
-h1 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 55px;
-    font-weight: 500;
-    letter-spacing: 6px;
-    margin: 0 0 15px;
+
+.tagline {
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-size:14px;
+    margin:15px 0 40px;
 }
 
-p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 16px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-}
 
 .button {
-    display: inline-block;
-    background: black;
-    color: white;
-    padding: 16px 40px;
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    display:inline-block;
+    padding:16px 40px;
+    margin:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
 }
+
+
+.gold {
+    background:#d4af37;
+    color:black;
+}
+
+
+.outline {
+    border:1px solid #d4af37;
+    color:white;
+}
+
+
+.info-section {
+
+    background:#111;
+    padding:50px 20px;
+    text-align:center;
+
+}
+
+
+.info-grid {
+
+    max-width:900px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+
+.info-card {
+
+    border:1px solid rgba(212,175,55,.5);
+    padding:30px;
+    border-radius:15px;
+
+}
+
+
+.icon {
+
+    font-size:35px;
+    margin-bottom:15px;
+
+}
+
+
+h2 {
+
+    font-family:"Cormorant Garamond",serif;
+    color:#d4af37;
+    font-size:35px;
+
+}
+
+
+p {
+
+    line-height:1.8;
+
+}
+
 
 </style>
 
 </head>
 
+
 <body>
 
-<img class="hero-image" src="IMG_6956.jpeg" alt="PartsByNina Luxury Hair Experience">
 
-<div class="content">
+<section class="hero">
 
-<h1>PartsByNina</h1>
 
-<p>Luxury Hair Experience</p>
+<div class="logo">
+PartsByNina
+</div>
 
-<a class="button" href="policies.html">
+
+<div class="tagline">
+Luxury Hair Experience
+</div>
+
+
+<a class="button gold" href="policies.html">
 Book Your Experience
 </a>
 
+
+<a class="button outline" href="services.html">
+View Services
+</a>
+
+
+</section>
+
+
+
+<section class="info-section">
+
+
+<div class="info-grid">
+
+
+<div class="info-card">
+
+<div class="icon">🕒</div>
+
+<h2>Hours</h2>
+
+<p>
+Appointment Only<br><br>
+Monday - Saturday<br>
+10:00 AM - 10:00 PM<br><br>
+Sunday<br>
+Closed
+</p>
+
 </div>
+
+
+
+<div class="info-card">
+
+<div class="icon">📞</div>
+
+<h2>Contact</h2>
+
+<p>
+929-399-5080<br><br>
+partsbyNinasi@gmail.com
+</p>
+
+</div>
+
+
+
+<div class="info-card">
+
+<div class="icon">✨</div>
+
+<h2>Appointments</h2>
+
+<p>
+Please review our policies and requirements before booking your luxury hair experience.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
 
 </body>
 </html>
