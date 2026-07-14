@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,226 +12,261 @@
 
 <style>
 
-body {
-    margin:0;
-    background:#111;
-    color:white;
-    font-family:"Montserrat", sans-serif;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-
-/* MAIN IMAGE */
-
-.hero {
-
-    min-height:100vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.75)),
-    url('IMG_6956.jpeg') center/cover;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-
-    padding:20px;
-
+body{
+background:#111;
+color:#fff;
+font-family:"Montserrat",sans-serif;
+overflow-x:hidden;
 }
 
+/* HERO */
 
-/* BRAND NAME */
+.hero{
 
-.logo {
+min-height:100vh;
 
-    font-family:"Great Vibes", cursive;
-    font-size:95px;
-    font-weight:400;
-    letter-spacing:1px;
-    color:#d4af37;
-    line-height:1;
+background:
+linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.78)),
+url("IMG_6956.jpeg") center center/cover no-repeat;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:30px;
 
 }
 
+/* LOGO */
 
+.logo{
 
-.tagline {
+font-family:"Great Vibes",cursive;
 
-    font-family:"Cormorant Garamond", serif;
-    font-size:25px;
-    letter-spacing:3px;
-    margin-top:15px;
-    margin-bottom:45px;
+font-size:clamp(52px,9vw,82px);
+
+font-weight:400;
+
+color:#d4af37;
+
+line-height:1;
+
+margin-bottom:12px;
 
 }
 
+/* TAGLINE */
 
+.tagline{
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:clamp(18px,4vw,28px);
+
+letter-spacing:4px;
+
+margin-bottom:45px;
+
+}
 
 /* BUTTONS */
 
-.button {
+.button{
 
-    display:inline-block;
-    padding:16px 45px;
-    margin:10px;
+display:inline-block;
 
-    text-decoration:none;
-    text-transform:uppercase;
-    letter-spacing:2px;
+padding:16px 42px;
 
-    font-size:13px;
+margin:8px;
 
-    transition:.3s;
+text-decoration:none;
 
-}
+text-transform:uppercase;
 
+letter-spacing:2px;
 
-.gold {
+font-size:13px;
 
-    background:#d4af37;
-    color:black;
+border-radius:40px;
+
+transition:.35s;
 
 }
 
+.button:hover{
 
-.outline {
-
-    border:1px solid #d4af37;
-    color:white;
+transform:translateY(-4px);
 
 }
 
+.gold{
 
-.button:hover {
+background:#d4af37;
 
-    transform:translateY(-3px);
+color:#111;
 
-}
-
-
-
-
-/* INFO SECTION */
-
-
-.info-section {
-
-    background:#0d0d0d;
-    padding:60px 20px;
+font-weight:600;
 
 }
 
+.outline{
 
+border:1px solid #d4af37;
 
-.info-grid {
-
-    max-width:1000px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:25px;
+color:white;
 
 }
 
+/* INFO */
 
+.info-section{
 
-.info-card {
+background:#0d0d0d;
 
-    border:1px solid rgba(212,175,55,.5);
-
-    border-radius:18px;
-
-    padding:35px 25px;
-
-    text-align:center;
-
-    background:rgba(255,255,255,.03);
+padding:80px 20px;
 
 }
 
+.info-grid{
 
+max-width:1100px;
 
-.icon {
+margin:auto;
 
-    font-size:35px;
-    margin-bottom:15px;
+display:grid;
 
-}
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-
-
-h2 {
-
-    font-family:"Cormorant Garamond", serif;
-
-    color:#d4af37;
-
-    font-size:38px;
-
-    margin:10px 0;
+gap:25px;
 
 }
 
+.info-card{
 
+padding:35px;
 
-p {
+background:rgba(255,255,255,.03);
 
-    line-height:1.8;
+border:1px solid rgba(212,175,55,.35);
 
-    font-size:15px;
+border-radius:18px;
+
+backdrop-filter:blur(8px);
 
 }
 
+.icon{
 
+font-size:34px;
+
+margin-bottom:15px;
+
+}
+
+.info-card h2{
+
+font-family:"Cormorant Garamond",serif;
+
+color:#d4af37;
+
+font-size:34px;
+
+margin-bottom:18px;
+
+}
+
+.info-card p{
+
+font-size:15px;
+
+line-height:1.9;
+
+color:#ddd;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:20px;
+
+}
+
+.logo{
+
+font-size:56px;
+
+}
+
+.tagline{
+
+font-size:20px;
+
+letter-spacing:2px;
+
+margin-bottom:35px;
+
+}
+
+.button{
+
+display:block;
+
+width:100%;
+
+max-width:300px;
+
+margin:12px auto;
+
+}
+
+}
 
 </style>
 
 </head>
 
-
 <body>
 
-
 <section class="hero">
-
 
 <div class="logo">
 PartsByNina
 </div>
 
-
 <div class="tagline">
 Luxury Hair Experience
 </div>
 
-
-
-<a class="button gold" href="policies.html">
+<a class="button gold"
+href="https://squareup.com/appointments/book/LA61NW3V0J3NN"
+target="_blank">
 Book Your Experience
 </a>
 
-
-<a class="button outline" href="services.html">
+<a class="button outline"
+href="https://squareup.com/appointments/book/LA61NW3V0J3NN"
+target="_blank">
 View Services
 </a>
 
-
-
 </section>
-
-
-
-
 
 <section class="info-section">
 
-
 <div class="info-grid">
-
-
 
 <div class="info-card">
 
@@ -238,20 +275,20 @@ View Services
 <h2>Hours</h2>
 
 <p>
+
 Appointment Only<br><br>
 
-Monday - Saturday<br>
-10:00 AM - 10:00 PM<br><br>
+Monday – Saturday<br>
+
+10:00 AM – 10:00 PM<br><br>
 
 Sunday<br>
+
 Closed
 
 </p>
 
 </div>
-
-
-
 
 <div class="info-card">
 
@@ -260,6 +297,7 @@ Closed
 <h2>Contact</h2>
 
 <p>
+
 929-399-5080<br><br>
 
 partsbyNinasi@gmail.com
@@ -267,10 +305,6 @@ partsbyNinasi@gmail.com
 </p>
 
 </div>
-
-
-
-
 
 <div class="info-card">
 
@@ -280,20 +314,16 @@ partsbyNinasi@gmail.com
 
 <p>
 
-Please review our policies and requirements before booking your luxury hair experience.
+Browse our services, choose your desired style, and book your appointment directly through our secure online booking system.
 
 </p>
 
 </div>
 
-
-
 </div>
-
 
 </section>
 
-
-
 </body>
+
 </html>
